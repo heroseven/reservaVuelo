@@ -5,7 +5,10 @@ class DatabaseSeeder extends Seeder {
 	public function run()
 	{
 		Eloquent::unguard();
-
+		/*
+		$this->call('PostTableSeeder');
+		$this->command->info('Posts insertados');
+		*/
 		$this->call('UsuarioTableSeeder');
 		$this->command->info('Usuario table seeded!');
 

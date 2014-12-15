@@ -10,5 +10,8 @@ class Vuelo extends Eloquent {
 	{
 		return $this->hasOne('Ciudad', 'id');
 	}
+	public function Itinerario(){
+		return $this->hasOne('Itinerario', 'id');
+	}
 
 }
